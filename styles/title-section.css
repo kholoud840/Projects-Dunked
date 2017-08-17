@@ -1,0 +1,55 @@
+.title-section {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.title-section .title {
+    margin-bottom: 20px;
+}
+
+.title-section .title h2 {
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.title-section .title p {
+    color: #999;
+    font-size: 0.8em;
+}
+
+.title-section button {
+    border: none;
+    background: rgb(0, 194, 131);
+    color: #fff;
+    text-transform: capitalize;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.title-section button:hover {
+    background: rgb(0, 219, 150);
+}
+
+@media (min-width: 500px) {
+
+    .title-section .title {
+        display: flex;
+        margin-bottom: 0;
+        align-items: center;
+    }
+
+    .title-section {
+        text-align: initial;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title-section .title h2 {
+        margin-bottom: 0;
+    }
+
+}

@@ -1,0 +1,57 @@
+.side-menu {
+    margin-bottom: 30px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.side-menu a.active {
+    color: #2a92c7;
+}
+
+.side-menu li {
+    margin-bottom: 10px;
+}
+
+.icons-links a {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.icons-links span {
+    display: inline-block;
+    padding: 6px;
+    background: #48afe9;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 0.7em;
+    position: relative;
+    display: none;
+}
+
+.icons-links span::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    border-right: 6px solid #48afe9;
+    border-bottom: 6px solid rgba(0, 0, 0, 0);
+    border-top: 6px solid rgba(0, 0, 0, 0);
+    left: -10px;
+    top: 6px;
+}
+
+.icons-links svg {
+    margin-right: 4px;
+}
+
+.icons-links svg:hover + span {
+    display: inline-block;
+}

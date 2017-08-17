@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects-Dunked</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/projects-section.css">
+    <link rel="stylesheet" href="styles/title-section.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<svg style="display: none">
+    <defs>
+        <g>
+            <path id="icon-setting"
+                  d="M863.24 382.771l-88.759-14.807c-6.451-26.374-15.857-51.585-28.107-75.099l56.821-70.452c12.085-14.889 11.536-36.312-1.205-50.682l-35.301-39.729c-12.796-14.355-34.016-17.391-50.202-7.165l-75.906 47.716c-33.386-23.326-71.204-40.551-112-50.546l-14.85-89.235C510.615 13.877 494.264.013 475.07.013h-53.198c-19.155 0-35.561 13.864-38.608 32.759l-14.931 89.263c-33.729 8.258-65.353 21.588-94.213 39.144l-72.188-51.518c-15.558-11.115-36.927-9.377-50.504 4.171l-37.583 37.61c-13.548 13.577-15.286 34.946-4.142 50.504l51.638 72.326c-17.391 28.642-30.584 60.086-38.841 93.515l-89.743 14.985C13.891 385.888 0 402.24 0 421.435v53.156c0 19.193 13.891 35.547 32.757 38.663l89.743 14.985c6.781 27.508 16.625 53.784 29.709 78.147L95.647 676.44c-12.044 14.875-11.538 36.312 1.203 50.669l35.274 39.73c12.797 14.382 34.028 17.363 50.216 7.163l77-48.37c32.581 22.285 69.44 38.664 108.993 48.37l14.931 89.25c3.048 18.896 19.453 32.76 38.608 32.76h53.198c19.194 0 35.545-13.863 38.661-32.759l14.875-89.25c33.308-8.147 64.531-21.245 93.134-38.5l75.196 53.705c15.53 11.155 36.915 9.405 50.478-4.186l37.598-37.597c13.532-13.536 15.365-34.893 4.127-50.479l-53.536-75.059c17.441-28.738 30.704-60.238 38.909-93.816l88.758-14.82c18.921-3.116 32.756-19.469 32.756-38.663v-53.156c-.028-19.192-13.863-35.544-32.786-38.661zM449.42 616.013c-92.764 0-168-75.25-168-168 0-92.764 75.236-168 168-168 92.748 0 167.998 75.236 167.998 168 0 92.75-75.25 168-167.998 168z"></path>
+        </g>
+        <g>
+            <path id="icon-eye"
+                  d="M244.425 98.725c-93.4 0-178.1 51.1-240.6 134.1-5.1 6.8-5.1 16.3 0 23.1 62.5 83.1 147.2 134.2 240.6 134.2s178.1-51.1 240.6-134.1c5.1-6.8 5.1-16.3 0-23.1-62.5-83.1-147.2-134.2-240.6-134.2zm6.7 248.3c-62 3.9-113.2-47.2-109.3-109.3 3.2-51.2 44.7-92.7 95.9-95.9 62-3.9 113.2 47.2 109.3 109.3-3.3 51.1-44.8 92.6-95.9 95.9zm-3.1-47.4c-33.4 2.1-61-25.4-58.8-58.8 1.7-27.6 24.1-49.9 51.7-51.7 33.4-2.1 61 25.4 58.8 58.8-1.8 27.7-24.2 50-51.7 51.7z"
+            />
+
+        </g>
+        <g>
+            <path id="icon-bars"
+                  d="M63.953 401.992H9.135c-2.666 0-4.853.855-6.567 2.567C.859 406.271 0 408.461 0 411.126v54.82c0 2.665.855 4.855 2.568 6.563 1.714 1.718 3.905 2.57 6.567 2.57h54.818c2.663 0 4.853-.853 6.567-2.57 1.712-1.708 2.568-3.898 2.568-6.563v-54.82c0-2.665-.856-4.849-2.568-6.566-1.714-1.712-3.904-2.568-6.567-2.568zM283.225 292.36h-54.818c-2.667 0-4.854.855-6.567 2.566-1.711 1.711-2.57 3.901-2.57 6.563v164.456c0 2.665.856 4.855 2.57 6.563 1.713 1.718 3.899 2.57 6.567 2.57h54.818c2.665 0 4.855-.853 6.563-2.57 1.711-1.708 2.573-3.898 2.573-6.563V301.49c0-2.662-.862-4.853-2.573-6.563-1.707-1.711-3.898-2.567-6.563-2.567zM173.589 365.451h-54.818c-2.667 0-4.854.855-6.567 2.566-1.711 1.711-2.568 3.901-2.568 6.563v91.358c0 2.669.854 4.859 2.568 6.57 1.713 1.711 3.899 2.566 6.567 2.566h54.818c2.663 0 4.853-.855 6.567-2.566 1.709-1.711 2.568-3.901 2.568-6.57V374.58c0-2.662-.859-4.853-2.568-6.563-1.714-1.71-3.905-2.566-6.567-2.566zM392.857 182.725h-54.819c-2.666 0-4.856.855-6.57 2.568-1.708 1.714-2.563 3.901-2.563 6.567v274.086c0 2.665.855 4.855 2.563 6.563 1.714 1.718 3.904 2.57 6.57 2.57h54.819c2.666 0 4.856-.853 6.563-2.57 1.718-1.708 2.57-3.898 2.57-6.563V191.86c0-2.666-.853-4.853-2.57-6.567-1.707-1.713-3.897-2.568-6.563-2.568zM509.06 39.115c-1.718-1.714-3.901-2.568-6.57-2.568h-54.816c-2.662 0-4.853.854-6.567 2.568-1.714 1.709-2.569 3.899-2.569 6.563v420.268c0 2.665.855 4.855 2.569 6.563 1.715 1.718 3.905 2.57 6.567 2.57h54.816c2.669 0 4.853-.853 6.57-2.57 1.711-1.708 2.566-3.898 2.566-6.563V45.679c0-2.664-.855-4.854-2.566-6.564z"></path>
+        </g>
+        <g>
+            <path id="icon-logout"
+                  d="M245.608 84.392c-5.856-5.857-15.355-5.858-21.213-.001-5.857 5.858-5.858 15.355 0 21.213L268.789 150H85.002c-8.284 0-15 6.716-15 15s6.716 15 15 15h183.785l-44.392 44.392c-5.858 5.858-5.858 15.355 0 21.213 2.929 2.929 6.768 4.393 10.607 4.393 3.839 0 7.678-1.464 10.606-4.393l69.998-69.998c5.858-5.857 5.858-15.355 0-21.213l-69.998-70.002z"/>
+            <path d="M155 330c8.284 0 15-6.716 15-15s-6.716-15-15-15H40V30h115c8.284 0 15-6.716 15-15s-6.716-15-15-15H25c-8.284 0-15 6.716-15 15v300c0 8.284 6.716 15 15 15h130z"></path>
+        </g>
+    </defs>
+</svg>
+
+
+<div class="content">
+    <aside>
+        <header>
+            <h1 class="logo">
+                <a href="#">
+                    <svg></svg>
+                </a>
+            </h1>
+        </header>
+
+        <ul class="side-menu">
+            <li><a href="#" class="active">projects</a></li>
+            <li><a href="#">pages</a></li>
+            <li><a href="#">templates</a></li>
+            <li><a href="#">customize</a></li>
+        </ul>
+
+
+        <ul class="icons-links">
+            <li><a href="#">
+                <svg viewBox="0 0 880 880">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-setting"></use>
+                </svg>
+                <span>setting</span>
+            </a></li>
+
+
+            <li><a href="#">
+                <svg viewBox="0 0 512 512">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-eye"></use>
+                </svg>
+                <span>view</span>
+            </a></li>
+
+            <li><a href="#">
+                <svg viewBox="0 0 512 512">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-bars"></use>
+                </svg>
+                <span>progress</span>
+            </a></li>
+        </ul>
+
+    </aside>
+    <main>
+        <section class="title-section">
+            <div class="title">
+                <h2>projects</h2>
+                <p>you're using 10 projects, you've got 40 left </p>
+            </div>
+            <button type="">new project</button>
+        </section>
+        <section class="projects-section">
+
+            <div class="projects-wrapper">
+                <article class="project">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x150/e51e3f/fff" alt="">
+                    </div>
+                    <h3 class="project-name">paper lips</h3>
+                    <div class="actions">
+                        <button class="btn on">on</button>
+                        <button href="#" class="btn-setting">
+                            <svg viewBox="0 0 880 880">
+                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-setting"></use>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">rename</a></li>
+                            <li><a href="#">edit thumbnail</a></li>
+                            <li><a href="#" class="delete">delete project</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x150/fefacd/fff" alt="">
+                    </div>
+                    <h3 class="project-name">paper lips</h3>
+                    <div class="actions">
+                        <button class="btn on">on</button>
+                        <button href="#" class="btn-setting">
+                            <svg viewBox="0 0 880 880">
+                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-setting"></use>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">rename</a></li>
+                            <li><a href="#">edit thumbnail</a></li>
+                            <li><a href="#" class="delete">delete project</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x150/b8b8b8/fff" alt="">
+                    </div>
+                    <h3 class="project-name">paper lips</h3>
+                    <div class="actions">
+                        <button class="btn off">off</button>
+                        <button href="#" class="btn-setting">
+                            <svg viewBox="0 0 880 880">
+                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-setting"></use>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">rename</a></li>
+                            <li><a href="#">edit thumbnail</a></li>
+                            <li><a href="#" class="delete">delete project</a></li>
+                        </ul>
+                    </div>
+
+                </article>
+                <article class="project">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x150/dadee7/fff" alt="">
+                    </div>
+                    <h3 class="project-name">paper lips</h3>
+                    <div class="actions">
+                        <button class="btn on">on</button>
+                        <button href="#" class="btn-setting">
+                            <svg viewBox="0 0 880 880">
+                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-setting"></use>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">rename</a></li>
+                            <li><a href="#">edit thumbnail</a></li>
+                            <li><a href="#" class="delete">delete project</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x150/ececee/fff" alt="">
+                    </div>
+                    <h3 class="project-name">paper lips</h3>
+                    <div class="actions">
+                        <button class="btn private">private</button>
+                        <button href="#" class="btn-setting">
+                            <svg viewBox="0 0 880 880">
+                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-setting"></use>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">rename</a></li>
+                            <li><a href="#">edit thumbnail</a></li>
+                            <li><a href="#" class="delete">delete project</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x150/1272be/fff" alt="">
+                    </div>
+                    <h3 class="project-name">paper lips</h3>
+                    <div class="actions">
+                        <button class="btn off">off</button>
+                        <button href="#" class="btn-setting">
+                            <svg viewBox="0 0 880 880">
+                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-setting"></use>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">rename</a></li>
+                            <li><a href="#">edit thumbnail</a></li>
+                            <li><a href="#" class="delete">delete project</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x150/f1f1f1/fff" alt="">
+                    </div>
+                    <h3 class="project-name">paper lips</h3>
+                    <div class="actions">
+                        <button class="btn on">on</button>
+                        <button href="#" class="btn-setting">
+                            <svg viewBox="0 0 880 880">
+                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-setting"></use>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">rename</a></li>
+                            <li><a href="#">edit thumbnail</a></li>
+                            <li><a href="#" class="delete">delete project</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x150/f1dca7/fff" alt="">
+                    </div>
+                    <h3 class="project-name">paper lips</h3>
+                    <div class="actions">
+                        <button class="btn private">private</button>
+                        <button href="#" class="btn-setting">
+                            <svg viewBox="0 0 880 880">
+                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-setting"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x150/44c2bf/fff" alt="">
+                    </div>
+                    <h3 class="project-name">paper lips</h3>
+                    <div class="actions">
+                        <button class="btn on">on</button>
+                        <button href="#" class="btn-setting">
+                            <svg viewBox="0 0 880 880">
+                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-setting"></use>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">rename</a></li>
+                            <li><a href="#">edit thumbnail</a></li>
+                            <li><a href="#" class="delete">delete project</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x150/333134/fff" alt="">
+                    </div>
+                    <h3 class="project-name">paper lips</h3>
+                    <div class="actions">
+                        <button class="btn on">on</button>
+                        <button href="#" class="btn-setting">
+                            <svg viewBox="0 0 880 880">
+                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-setting"></use>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">rename</a></li>
+                            <li><a href="#">edit thumbnail</a></li>
+                            <li><a href="#" class="delete">delete project</a></li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+
+
+        </section>
+    </main>
+</div>
+
+
+</body>
+</html>

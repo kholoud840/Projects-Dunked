@@ -1,0 +1,165 @@
+.project {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.project .thumbnail {
+    margin-bottom: 22px;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 84%;
+    margin-right: 0;
+/ / border: 2 px solid rgba(0, 0, 0, 0.5);
+}
+
+.project .thumbnail img {
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.project .project-name {
+    font-weight: 300;
+    color: #4f4e4e;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+
+.project .btn {
+    border: none;
+    display: inline-block;
+    padding: 4px 6px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+.project .on {
+    background: rgb(0, 194, 131);
+}
+
+.project .private {
+    background: rgb(255, 167, 67);
+}
+
+.project .off {
+    background: rgb(111, 111, 109);
+}
+
+.project .btn-setting {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.project .actions {
+    display: flex;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    top: 56px;
+    left: 10px;
+    box-shadow: 0 0 6px #b2b2b2;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-transform: capitalize;
+    font-size: 0.8em;
+}
+
+.dropdown-menu li {
+    width: 140px;
+}
+
+.dropdown-menu li:hover {
+    background: #259ab6;
+}
+
+.dropdown-menu li:hover > a {
+    color: #fff;
+}
+
+.dropdown-menu a.delete {
+    border-top: 1px solid #eee;
+    color: #ff5957;
+}
+
+.btn-setting:hover + ul {
+    display: block;
+}
+@media (min-width: 400px){
+    .project {
+        //padding: 0;
+        width: 50%;
+        float: left;
+        padding-right: 16px;
+    / / display: block;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .projects-wrapper {
+        position: relative;
+        margin-right: -16px;
+    }
+
+    .projects-wrapper::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .project .project-name {
+        font-size: 0.8em;
+
+    }
+    .project .btn {
+        border: none;
+        display: inline-block;
+        padding: 4px 6px;
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 0.8em;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 600px) {
+    .project {
+
+        width: 33.33%;
+
+    }
+}
+@media (min-width: 700px) {
+    .project {
+
+        width: 25%;
+
+    }
+}
+@media (min-width: 900px) {
+    .project {
+
+        width: 20%;
+
+    }
+}
+
