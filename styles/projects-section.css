@@ -31,7 +31,7 @@
     margin-bottom: 12px;
 }
 
-.project .btn {
+ .btn {
     border: none;
     display: inline-block;
     padding: 4px 6px;
@@ -43,15 +43,15 @@
     margin-right: 6px;
 }
 
-.project .on {
+ .btn.on {
     background: rgb(0, 194, 131);
 }
 
-.project .private {
+.btn.private {
     background: rgb(255, 167, 67);
 }
 
-.project .off {
+.btn.off {
     background: rgb(111, 111, 109);
 }
 
@@ -61,19 +61,25 @@
     cursor: pointer;
     position: relative;
 }
+.btn-setting:focus {
+    outline: none;
+}
 
 .project .actions {
     display: flex;
 }
 
 .dropdown-menu {
-    display: none;
+    //display: none;
     position: absolute;
     background: white;
     border-radius: 4px;
-    top: 56px;
-    left: 10px;
     box-shadow: 0 0 6px #b2b2b2;
+    left: -28px;
+    top: -110px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
 }
 
 .dropdown-menu a {
@@ -104,13 +110,22 @@
 .btn-setting:hover + ul {
     display: block;
 }
+
+.menu-wrapper {
+    position: relative;
+    width: 30px;
+    height: 24px;
+}
+.menu-wrapper:hover ul {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media (min-width: 400px){
     .project {
-        //padding: 0;
         width: 50%;
         float: left;
         padding-right: 16px;
-    / / display: block;
         margin-bottom: 30px;
         position: relative;
     }
