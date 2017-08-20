@@ -22,7 +22,7 @@ ul {
     width: 1020px;
     max-width: 100%;
     margin: 0 auto;
-    padding:  0 10px;
+    padding: 0 10px;
 
 }
 
@@ -40,7 +40,7 @@ input:focus {
     outline: none;
 }
 
-form label{
+form label {
     display: none;
 }
 
@@ -52,23 +52,45 @@ svg {
     fill: #767676;
 
 }
-svg:hover{
+
+svg:hover {
     fill: #3b9ce1;
 }
+
 /******layout******/
-.content{
+.content {
     display: flex;
 }
-aside{
+
+aside {
     display: none;
 }
-main{
-    flex:1;
+
+main {
+    flex: 1;
 }
 
-@media (min-width: 43.75em) {
-    aside{
-        display: initial;
-        flex-basis:160px;
+aside {
+    display: initial;
+    flex-basis: 160px;
+    background: #fff;
+}
+
+@media (max-width: 43.75em) {
+    aside {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 26%;
+        box-shadow: 0 0 6px #b2b2b2;
+        transform: translateX(-102%);
+        transition: transform 0.3s ease-out;
+        z-index: 1;
+        padding: 10px;
+    }
+
+    aside.is-active {
+        transform: translateX(0);
     }
 }
