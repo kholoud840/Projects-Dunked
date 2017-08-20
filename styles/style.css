@@ -82,7 +82,7 @@ aside {
         left: 0;
         top: 0;
         bottom: 0;
-        width: 26%;
+        width: 60%;
         box-shadow: 0 0 6px #b2b2b2;
         transform: translateX(-102%);
         transition: transform 0.3s ease-out;
@@ -90,7 +90,8 @@ aside {
         padding: 10px;
     }
 
-    aside.is-active {
+
+        aside.is-active {
         transform: translateX(0);
     }
 }
